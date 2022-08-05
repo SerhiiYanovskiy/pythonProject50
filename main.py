@@ -14,7 +14,7 @@ def infoo():
         {
             'tranid': '3421125:3616162294',
             'post': 'НП',  # #список
-            'city': 'kvejvei',
+            'city': 'kvejveislvksldkva',
             'index': 'Київська область, с. Велика Олександрівка , вул. Озерна 44, склад №1',
             'phone': '+380 (67) 123-45-67',  # текст
             'name': 'Фамилия Имя',
@@ -676,7 +676,10 @@ def start_webdriwer(NN):
 
             for elem in soup:
                 if tranid["tranid"] in elem.text:
-                    line = elem.text[30::]
+                    line = elem.text[25::]
+                    print(line)
+
+
                     browser.find_element(by=By.ID, value=elem["id"]).click()
                     time.sleep(1)
                     try:
@@ -1336,8 +1339,10 @@ def start_webdriwer(NN):
 
                     for elem in soup1:
                         if tranid["tranid"] in elem.text:
-                            line1 = elem.text[30::]
-                            if line1 != line:
+                            line1 = elem.text[25::]
+                            print(line1)
+                            if line1 == line:
+
                                 with open("error_tranid.txt", "a") as file:
                                     file.write(f"{tranid}  error \n")
                                 error_list.append(tranid)
@@ -1346,5 +1351,6 @@ def start_webdriwer(NN):
 
 
 start_webdriwer(0)
+
 time.sleep(300)
 start_webdriwer(1)
