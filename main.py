@@ -13,65 +13,62 @@ error_list = []
 def infoo():
     data = [
         {
-            'tranid': '',
-            'post': 'НП',  # #список
-            'city': 'kvejvei',
-            'index': 'Київська область, с. Велика Олександрівка , вул. Озерна 44, склад №1',
-            'phone': '+380 (67) 123-45-67',  # текст
-            'name': 'Фамилия Имя',
-            'Sum': '345,00',
-            'info_status': '1-3',
-            'istok': 'сайт',  # список
-            'vber': '+380507',
-            'field18':'Нейлон',
-
-            # Материал  #список
+            'tranid': '2683825:3624509314',
+            'post': 'за наш счет ПОШТОМАТ',  # #список
+            'city': 'city',
+            'index': 'index',
+            'phone': '+38222',  # текст
+            'name': 'Фыыыы',
+            'Sum': '225,00',
+            'info_status': '23-11',
+            'istok': 'сайтUA',  # список
+            'vber': '+22',
+            'field18': 'Сатин',  # Материал  #список
             'field231': 'Белый',  # Фон1  #список
-            'field201': '5см',  # Размер    #текст
+            'field201': '33',  # Размер    #текст
             'field278': 'Красный',  # Цвет печати  #список
-            'field985': 'kdijvi',  # Количество
-            'kto': 'Влад',  # (Ответственный)  #список
+            'field985': '11+2',  # Количество
+            'kto': 'Алиса',  # (Ответственный)  #список
             'file': 'fkjjoiwajp',  # текст ссылки
             'file_1': 'dkcn;lkdjcda11958553.webp',  # текст ссылки
             'file_2': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
-    },
-    {
-        'tranid': '',
-        'post': 'УП',  # #список
-        'city': 'киев',
-        'index': 'Київська область, с. Велика Олександрівка , вул. Озерна 44, склад №1',
-        'phone': '+380 (67) 123-45-67',  # текст
-        'name': 'Фамилия Имя',
-        'Sum': '2,00',
+        },
+        {
+            'tranid': '',
+            'post': 'ПОШТОМАТ',  # #список
+            'city': 'city',
+            'index': 'index',
+            'phone': '+3777777777',  # текст
+            'name': 'ФИмя',
+            'Sum': '2222,00',
 
-        'info_status': '2-3',
-        'istok': 'сайт',  # список
-        'vber': '+380501234567',
-        'field18': 'Нейлон',  # Материал  #список
-        'field231': 'Белый',  # Фон1  #список
-        'field201': '5*5см',  # Размер    #текст
-        'field278': 'Красный',  # Цвет печати  #список
-        'field985': '12+3пар',  # Количество
-        'kto': 'Влад',  # (Ответственный)  #список
-        'file': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
-        'file_1': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
-        'file_2': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
-    },
-    {
-        'tranid': '',
-        'post': 'НП',  # #список
-        'phone': '+380 (67) 123-45-67',  # текст
-        'info_status': '3-3',
-        'istok': 'сайт',  # список
-        'field18': 'Нейлон',  # Материал  #список
-        'field231': 'Белый',  # Фон1  #список
-        'field201': '5*5см',  # Размер    #текст
-        'field278': 'Красный',  # Цвет печати  #список
-        'field985': '12+3пар',  # Количество
-        'kto': 'Влад',  # (Ответственный)  #список
-    }
+            'info_status': '12-13',
+            'istok': 'сайтUA',  # список
+            'vber': '+32',
+            'field18': 'Бирки',  # Материал  #список
+            'field231': 'Желт',  # Фон1  #список
+            'field201': '523',  # Размер    #текст
+            'field278': 'Белый',  # Цвет печати  #список
+            'field985': '20',  # Количество
+            'kto': 'Алиса',  # (Ответственный)  #список
+            # 'file': 'htt',  # текст ссылки
+            # 'file_1': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
+            # 'file_2': 'https:#tupwidget.com/e2b66c/IMG_20ilda11958553.webp',  # текст ссылки
+        },
+        # {
+        # 'tranid': '',
+        # 'post': 'НП',  # #список
+        # 'phone': '+380 (67) 123-45-67',  # текст
+        # 'info_status': '3-3',
+        # 'istok': 'сайт',  # список
+        # 'field18': 'Нейлон',  # Материал  #список
+        # 'field231': 'Белый',  # Фон1  #список
+        # 'field201': '5*5см',  # Размер    #текст
+        # 'field278': 'Красный',  # Цвет печати  #список
+        # 'field985': '12+3пар',  # Количество
+        # 'kto': 'Влад',  # (Ответственный)  #список
+        # }
     ]
-
     return (data)
 
 
@@ -131,12 +128,15 @@ def start_webdriwer(NN):
                     pyautogui.press(['down', 'down', 'down', 'enter'])
                 if tranid['post'] == 'за наш счет УП':
                     pyautogui.press(['down', 'down', 'down', 'down', 'enter'])
-                if tranid['post'] == 'ПАШТОМАТ':
+                if tranid['post'] == 'ПОШТОМАТ':
                     pyautogui.press(['down', 'down', 'down', 'down', 'down', 'enter'])
-                if tranid['post'] == 'за наш счет ПАШТОМАТ':
+                if tranid['post'] == 'за наш счет ПОШТОМАТ':
                     pyautogui.press(['down', 'down', 'down', 'down', 'down', 'down', 'enter'])
+
             except:
                 print("")
+
+            time.sleep(5)
 
             try:
                 browser.find_element(by=By.XPATH,
@@ -611,18 +611,20 @@ def start_webdriwer(NN):
                                  value="/html/body/div[2]/div[10]/div/div/form/div[2]/div/div/div[34]/div[2]/textarea").click()
             pyautogui.press(["pagedown"])
 
+
             try:
                 browser.find_element(by=By.XPATH,
-                                     value="/html/body/div[2]/div[10]/div/div/form/div[2]/div/div/div[34]/div[2]/textarea").click()
+                                     value="/html/body/div[2]/div[10]/div/div/form/div[2]/div/div/div[36]/div[2]/select").click()
             except:
                 print("")
             try:
-
-                if tranid['Kto'] == "Влад":
-                    pyautogui.press(['down', 'down', 'enter'])
-                if tranid['Kto'] == "Алиса":
+                if tranid['kto'] == "Не назначен":
+                    pyautogui.press(['enter'])
+                if tranid['kto'] == "Алиса":
                     pyautogui.press(['down', 'enter'])
-                if tranid['Kto'] == "Vlad":
+                if tranid['kto'] == "Влад":
+                    pyautogui.press(['down', 'down', 'enter'])
+                if tranid['kto'] == "Vlad":
                     pyautogui.press(['down', 'down', 'down', 'enter'])
             except:
                 print("")
@@ -705,9 +707,9 @@ def start_webdriwer(NN):
                             pyautogui.press(['down', 'down', 'down', 'enter'])
                         if tranid['post'] == 'за наш счет УП':
                             pyautogui.press(['down', 'down', 'down', 'down', 'enter'])
-                        if tranid['post'] == 'ПАШТОМАТ':
+                        if tranid['post'] == 'ПОШТОМАТ':
                             pyautogui.press(['down', 'down', 'down', 'down', 'down', 'enter'])
-                        if tranid['post'] == 'за наш счет ПАШТОМАТ':
+                        if tranid['post'] == 'за наш счет ПОШТОМАТ':
                             pyautogui.press(['down', 'down', 'down', 'down', 'down', 'down', 'enter'])
 
                     except:
@@ -727,17 +729,17 @@ def start_webdriwer(NN):
                     browser.find_element(by=By.XPATH,
                                          value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[9]/div[2]/textarea").click()
                     pyautogui.press(["pagedown"])
-                    time.sleep(5)
+
 
                     try:
                         browser.find_element(by=By.XPATH,
-                                             value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[9]/div[2]/textarea").clear()
+                                             value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[10]/div[2]/textarea").clear()
                     except:
                         print("")
 
                     try:
                         browser.find_element(by=By.XPATH,
-                                             value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[9]/div[2]/textarea").send_keys(
+                                             value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[10]/div[2]/textarea").send_keys(
                             tranid["index"])
 
                     except:
@@ -782,9 +784,8 @@ def start_webdriwer(NN):
                             tranid["Sum"])
                     except:
                         print("")
-                    browser.find_element(by=By.XPATH,
-                                         value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[14]/div[2]/input").click()
-                    pyautogui.press(["pagedown"])
+
+
 
                     try:
                         browser.find_element(by=By.XPATH,
@@ -1290,13 +1291,17 @@ def start_webdriwer(NN):
                                          value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[37]/div[2]/select").click()
 
                     pyautogui.press(['up', 'up', 'up', 'up', "enter"])
+                    browser.find_element(by=By.XPATH,
+                                         value="/html/body/div[2]/div[11]/div/div/div[1]/div[2]/div[2]/form/div/div[37]/div[2]/select").click()
+
+
                     try:
 
-                        if tranid["Kto"] == "Влад":
+                        if tranid["kto"] == "Влад":
                             pyautogui.press(['down', 'down', 'enter'])
-                        if tranid['Kto'] == "Алиса":
+                        if tranid['kto'] == "Алиса":
                             pyautogui.press(['down', 'enter'])
-                        if tranid['Kto'] == "Vlad":
+                        if tranid['kto'] == "Vlad":
                             pyautogui.press(['down', 'down', 'down', 'enter'])
                     except:
                         print("")
